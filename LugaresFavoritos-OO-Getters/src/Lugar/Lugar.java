@@ -16,8 +16,8 @@ public class Lugar {
 		}
 
 	public void mostraNoMapa() throws IOException, URISyntaxException {
-
-		Desktop.getDesktop().browse(new URI("https://www.google.com/maps/search/?api=1&query=" + nome));		
+		String nomeUrl = this.nome.replace(" ", "%20"); // consertando o erro de nomes com espaço, substituindo por %20
+		Desktop.getDesktop().browse(new URI("https://www.google.com/maps/search/?api=1&query=" + nomeUrl));		
 	}
 
 	public String getNome() {

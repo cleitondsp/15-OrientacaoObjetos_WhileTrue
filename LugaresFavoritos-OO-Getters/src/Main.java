@@ -9,9 +9,7 @@ public class Main {
 	public static void main(String[] args) throws IOException, URISyntaxException {
 		
 		
-		Lugar objetoLugar = new Lugar("Praça");	
-		
-		objetoLugar.setNome("Bar do Zé"); // utilizando o set - alterando o nome
+		Lugar objetoLugar = new Lugar("Bar do Zé");	
 		
 		objetoLugar.mostraNoMapa(); 
 		
